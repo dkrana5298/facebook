@@ -3,57 +3,80 @@
 }
 body {
     background-color: #f0f2f5;
-   
+   margin: 0px;
+   padding: 0px;
 }
 .facebook {
+    margin: 0px;
     display: flex;
-    padding: 100px 0 20px 100px;
+    padding: 150px  150px 0px 150px;
+   
+    justify-content: space-between;
 }
 a {
     text-decoration: none; 
+    color:#1877f2 ;
+    font-weight: lighter;
 }
 a:hover {
     text-decoration: underline;
 }
 hr {
     margin-top: 15px;
+    border: 0.5px solid #cccccc;
 }
 #text {
     width: 50%;
+    margin-top: 60px;
+    /* margin-left: 10px; */
    
 }
-#text h1 {
+/* #text h1 {
     color: #1877f2;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
     padding: 0;
     margin: 0px;
     padding-top: 60px;
+} */
+#text img {
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+    position: absolute;
 }
 #text p {
     font-size: 25px;
     padding: 0;
     margin: 0px;
-    
+    margin-left: 30px;
+    color: #1c1e21;
+   position: relative;
+   top: 95px;
 }
 #login {
-    box-shadow: 5px 5px 5px 5px #cccccc;
-    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #cccccc;
+    border-radius: 10px;
     padding: 10px 20px;
-    width: 50%;
+    width: 35%;
     font-weight: bold;
     text-align: center;
-    margin: 0 100px;
    background-color: white;
+   
 }
 #login input {
     margin-top: 10px;
-    padding: 10px 0 10px 10px;
+    padding: 14px 0 14px 14px;
     width: 98%;
     border-radius: 5px;
-    outline-color: #1877f2;
-    border: 2px solid #cccccc;
+    /* outline:1px solid #1877f2; */
+    border: 1px solid #cccccc;
     
+}
+::placeholder{
+  font-size: 16px;
+  font-weight: lighter;
 }
 #login button {
     margin: 15px 0;
@@ -69,16 +92,37 @@ hr {
     border-radius: 10px;
 }
 #submit_btn {
-    width: 50%;
-    padding: 10px 0;
+    width: 60%;
+    padding: 15px 5px;
     background-color: #42b72a;
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     border-radius: 10px;
 }
 #brand {
     text-align: right;
-    margin-right: 16%;
+    margin-right: 13%;
+    margin-top: 30px;
+}
+@media screen and (min-width:100px) and (max-width:800px){
+    .facebook {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #text {
+        width: 90%;
+        margin: 0px;
+    }
+    #login {
+        width: 90%;
+        margin-top: 110px;
+    }
+    #brand {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
 }
