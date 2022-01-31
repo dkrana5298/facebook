@@ -78,6 +78,9 @@ hr {
   font-size: 16px;
   font-weight: lighter;
 }
+#login input:focus-visible {
+    outline: 1px solid #1877f2;
+}
 #login button {
     margin: 15px 0;
 }
